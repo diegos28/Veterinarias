@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "layout.html" %}
+
+    {% block content %}
+    <form action="/editar_comenta/{{comentar.0}}" method="post">
+    <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-input" id="nombre" name="nombre" placeholder="Nombre" value="{{comentar.1}}">
+        <br>
+        <label for="nombre" class="form-label">Contraseña:</label>
+        <input type="text" class="form-input" id="contraseña" name="contraseña" placeholder="Nombre" value="{{comentar.2}}">
+        <br>
+        <label for="nombre" class="form-label">Telefono:</label>
+        <input type="text" class="form-input" id="telefono" name="telefono" placeholder="Nombre" value="{{comentar.3}}">
+        <br>
+        <label for="nombre" class="form-label">Direcion:</label>
+        <input type="text" class="form-input" id="direcion" name="direcion" placeholder="Nombre" value="{{comentar.4}}">
+        <br>
+        <label for="nombre" class="form-label">Comentario:</label>
+        <input type="text" class="form-input" id="comentario" name="comentario" placeholder="Nombre" value="{{comentar.5}}">
+        <br>
+        <label for="nombre" class="form-label">Nombre de usuario:</label>
+        <input type="text" class="form-input" id="usuario" placeholder="Nombre" name="usuario" value="{{comentar.6}}">
+        <br>
+        <button type="submit">Actualizar</button>
+    </form>
+    {% endblock %}
+</body>
+</html>

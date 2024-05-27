@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% extends "layout.html" %}
+
+{% block content %}
+    <form action="/agrega_comenta" method="post">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-input" id="nombre" name="nombre" placeholder="Nombre">
+        <br>
+        <label for="nombre" class="form-label">Contraseña:</label>
+        <input type="text" class="form-input" id="contraseña" name="contraseña" placeholder="Nombre">
+        <br>
+        <label for="nombre" class="form-label">Telefono:</label>
+        <input type="text" class="form-input" id="telefono" name="telefono" placeholder="Nombre">
+        <br>
+        <label for="nombre" class="form-label">Direcion:</label>
+        <input type="text" class="form-input" id="direcion" name="direcion" placeholder="Nombre">
+        <br>
+        <label for="nombre" class="form-label">Comentario:</label>
+        <input type="text" class="form-input" id="comentario" name="comentario" placeholder="Nombre">
+        <br>
+        <label for="nombre" class="form-label">Nombre de usuario:</label>
+        <input type="text" class="form-input" id="usuario" name="usuario" placeholder="Nombre">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    {% endblock %}
+</body>
+</html>
